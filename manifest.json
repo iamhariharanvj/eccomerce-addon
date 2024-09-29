@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Link Dropper",
+  "content_scripts": [{
+     "js": ["sidepanel.js"],
+     "matches": ["http://*/*", "https://*/*"]
+   }],
+  "version": "1.0",
+  "description": "Drag and drop links to fetch and display content",
+  "permissions": ["sidePanel", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Link Dropper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
