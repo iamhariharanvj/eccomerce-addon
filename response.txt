@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washing Machine Analysis</title>
+    <title>Boult W20 Earbuds Analysis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Washing Machine Analysis</h1>
+        <h1 class="text-center mb-4">Boult W20 Earbuds Analysis</h1>
+
         <div class="row">
             <div class="col-md-6">
-                <h2 class="mb-3">Key Features</h2>
+                <h2>Key Features</h2>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -22,54 +23,54 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Automatic</td>
-                            <td>Fully automatic operation, no manual intervention required.</td>
+                            <td>Battery Life</td>
+                            <td>Up to 32 hours with the charging case, 5 hours in music mode, 4 hours in gaming mode</td>
                         </tr>
                         <tr>
-                            <td>Top Load</td>
-                            <td>Loading clothes from the top, convenient for most users.</td>
+                            <td>Bluetooth Connectivity</td>
+                            <td>Supports Bluetooth for pairing with various devices</td>
                         </tr>
                         <tr>
-                            <td>Inverter Motor</td>
-                            <td>Energy-efficient and quiet operation.</td>
+                            <td>Touch Controls</td>
+                            <td>Supports touch controls for volume, music playback, calls, and gaming mode</td>
                         </tr>
                         <tr>
-                            <td>Multiple Wash Cycles</td>
-                            <td>Offers various wash settings for different types of clothes and levels of dirt.</td>
+                            <td>Dual Mic</td>
+                            <td>Equipped with two mics for improved call quality</td>
                         </tr>
                         <tr>
-                            <td>Spin Dry</td>
-                            <td>Efficiently removes excess water from clothes.</td>
+                            <td>Lightweight and Comfortable</td>
+                            <td>Weighs approximately 100-150 grams and provides a comfortable fit in the ears</td>
                         </tr>
                         <tr>
-                            <td>Tub Clean Feature</td>
-                            <td>Helps maintain the cleanliness of the washing machine's tub.</td>
+                            <td>Type-C Charging</td>
+                            <td>Uses a Type-C charging port for convenience</td>
                         </tr>
                         <tr>
-                            <td>Soft Closing Door</td>
-                            <td>Provides a smooth and quiet closing experience.</td>
+                            <td>Dolby Atmos Support</td>
+                            <td>Supports Dolby Atmos for enhanced audio experience</td>
                         </tr>
                         <tr>
-                            <td>Auto Load Sensing</td>
-                            <td>Automatically adjusts water levels based on the load size.</td>
+                            <td>Environmental Noise Cancellation</td>
+                            <td>Provides a degree of noise cancellation for a more immersive experience</td>
                         </tr>
                         <tr>
-                            <td>Monsoon Dry Feature</td>
-                            <td>Additional spin cycles for drying clothes in humid weather.</td>
+                            <td>In-Ear Detection</td>
+                            <td>Auto-pauses music when earbuds are removed from ears</td>
                         </tr>
                         <tr>
-                            <td>Smart App Connectivity</td>
-                            <td>Allows for monitoring and controlling the washing machine remotely.</td>
+                            <td>Water Resistance</td>
+                            <td>Features water resistance to withstand splashes and light rain</td>
                         </tr>
                         <tr>
-                            <td>Stainless Steel Drum</td>
-                            <td>Durable and rust-resistant drum.</td>
+                            <td>Boult Amp App Support</td>
+                            <td>Compatible with Boult Amp app for customization and other features</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-md-6">
-                <h2 class="mb-3">Main Drawbacks</h2>
+                <h2>Main Drawbacks</h2>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -79,60 +80,89 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>No Hot Water Option</td>
-                            <td>Does not offer the ability to use hot water for washing.</td>
+                            <td>Call Quality</td>
+                            <td>Call quality is reported as average, particularly outdoors</td>
                         </tr>
                         <tr>
-                            <td>Limited Drying Capacity</td>
-                            <td>Primarily focuses on spin drying, may require additional air drying.</td>
+                            <td>Microphone Quality</td>
+                            <td>Microphone quality is considered below average</td>
                         </tr>
                         <tr>
-                            <td>No Built-in Heater</td>
-                            <td>Cannot provide steam or hot water wash.</td>
+                            <td>Noise Cancellation</td>
+                            <td>Noise cancellation is present but not highly effective, especially at this price point</td>
                         </tr>
                         <tr>
-                            <td>No Child Lock</td>
-                            <td>May pose a safety risk for households with young children.</td>
+                            <td>App Control</td>
+                            <td>No dedicated app control for the earbuds, limiting customization options</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time</td>
+                            <td>Requires a long 24 hours to fully charge the earbuds</td>
+                        </tr>
+                        <tr>
+                            <td>Sound Quality</td>
+                            <td>Some users report that the bass sound quality is not excellent</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
         <div class="row mt-4">
             <div class="col-md-12">
-                <h2 class="mb-3">Target Audience</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Individuals looking for an affordable and reliable top-load washing machine.</li>
-                    <li class="list-group-item">Households with moderate to large laundry needs.</li>
-                    <li class="list-group-item">Consumers who prioritize energy efficiency and quiet operation.</li>
-                    <li class="list-group-item">People who prefer the convenience of automatic operation.</li>
+                <h2>Target Audience</h2>
+                <ul>
+                    <li>Users seeking affordable earbuds with decent battery life.</li>
+                    <li>Individuals who prioritize comfort and fit in their earbuds.</li>
+                    <li>Casual gamers and music listeners who don't require top-notch audio quality or noise cancellation.</li>
+                    <li>Those looking for earbuds with a wide range of compatibility, including iPhones and Android devices.</li>
+                    <li>Users who appreciate the convenience of touch controls.</li>
                 </ul>
             </div>
         </div>
+
         <div class="row mt-4">
             <div class="col-md-12">
-                <h2 class="mb-3">Overall Assessment</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">**Recommended:** Yes, for its value-for-money proposition, automatic features, and energy-efficient design.</li>
-                    <li class="list-group-item">**Reasons:**
-                        <ul>
-                            <li>Offers a range of useful features at a competitive price point.</li>
-                            <li>Energy-efficient inverter motor for lower electricity consumption.</li>
-                            <li>Automatic operation and multiple wash cycles for convenience and versatility.</li>
-                            <li>Durable stainless steel drum for long-lasting performance.</li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item">**Considerations:**
-                        <ul>
-                            <li>The lack of a hot water option may be a drawback for certain washing needs.</li>
-                            <li>Drying capabilities are primarily limited to spin drying, requiring additional air drying.</li>
-                        </ul>
-                    </li>
+                <h2>Overall Assessment</h2>
+                <ul>
+                    <li>The Boult W20 earbuds are a decent option for budget-conscious consumers who need a pair of wireless earbuds for everyday use.</li>
+                    <li>They offer a comfortable fit, decent battery life, and a wide range of compatibility, making them suitable for a variety of tasks.</li>
+                    <li>However, the sound quality, call quality, and microphone performance are not top-tier, and the noise cancellation feature is underwhelming.</li>
+                    <li>Consider other options if you prioritize exceptional sound quality, strong noise cancellation, or high-quality call clarity.</li>
                 </ul>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1B0Q8iW+zx0u05AS7bTyV2i59" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDf" crossorigin="anonymous"></script>
 </body>
 </html>
 ```
+
+This HTML code utilizes Bootstrap 5 to create a visually appealing and well-structured analysis of the Boult W20 earbuds. It includes sections for Key Features, Main Drawbacks, Target Audience, and Overall Assessment, all formatted using Bootstrap components like tables and lists. The analysis highlights the strengths and weaknesses of the product, providing a balanced view for potential buyers. 
+ for an unordered list of target audiences.
+     - `<li>` for list items.
+   - **Overall Assessment:**
+     - `<h2>` heading for the section.
+     - `<ul>` for an unordered list of bullet points for overall assessment.
+     - `<li>` for list items.
+
+4. **Bootstrap 5 JavaScript:**
+   - Included Bootstrap 5 JavaScript (bundle) from CDN.
+   - This ensures that all Bootstrap 5 components work correctly.
+
+**Remember:** This code provides a basic structure for the analysis. You'll need to replace the placeholder text with the specific features, drawbacks, target audience, and overall assessment for the Realme Techlife T100 Earbuds.
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1B0Q8iW+WX01j+C7CXTpsWn8L+8" crossorigin="anonymous"></script>
+</body>
+</html>
+```
+
+This code will generate an HTML page that provides a detailed analysis of the LG washing machine, using Bootstrap 5 for styling and layout. The information is organized into sections: Key Features, Main Drawbacks, Target Audience, and Overall Assessment. Each section presents the data in a clear and informative format, making it easy for users to understand the product's strengths and weaknesses. 
+st drawbacks and their descriptions.
+    * **Target Audience:** Uses an unordered list to describe the ideal users for this product.
+    * **Overall Assessment:** Uses an unordered list to provide a concise evaluation of the product.
+* Bootstrap's classes like `table-striped`, `mt-5`, `text-center`, and `row` are used for styling and layout.
+
+This HTML code provides a comprehensive analysis of the LG washing machine based on the provided question-and-answer data, presenting it in an easily readable and informative format using Bootstrap 5.

@@ -11,9 +11,9 @@ import re
 app = Flask(__name__)
 
 
+
 def scroll_and_load_all_content(driver, model, url):
     chat_session = model.start_chat(history=[])
-
 
     try:
         driver.get(url)
@@ -51,7 +51,7 @@ Main Drawbacks: Present in a Bootstrap 5 table format with drawback name and des
 Target Audience: Use a Bootstrap 5 unordered list format to describe who the product is best suited for.
 Overall Assessment: Use bootstrap 5 unordered list to provide a final assessment in bullet points, explaining whether the product is recommended and the reasons for your conclusion.'''
 
-    with open("dataset.txt", 'r+') as f:
+    with open("dataset.txt", 'w') as f:
         for i, span in enumerate(all_spans):
             if span == 'Q:':
                 prompt += f"Q: {all_spans[i + 1]}"
@@ -62,6 +62,7 @@ Overall Assessment: Use bootstrap 5 unordered list to provide a final assessment
                 prompt += f"A: {all_spans[i + 1]}\n"
                 f.write(f"A: {all_spans[i + 1]}\n")
                 ans_count += 1
+     
 
     response = chat_session.send_message(prompt)
     print(f"Found {ques_count} questions and {ans_count} answers..")
@@ -78,9 +79,10 @@ Overall Assessment: Use bootstrap 5 unordered list to provide a final assessment
 
 
 def fetch_questions_url(product_url):
-
     driver = webdriver.Chrome()
-    genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+    # genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+    genai.configure(api_key='AIzaSyCbChvAokE6SJ-sJX6LFgRFiPYGia-0kZw')
+
 
     generation_config = {
         "temperature": 1,
@@ -95,6 +97,9 @@ def fetch_questions_url(product_url):
         generation_config=generation_config,
     )
 
+    chat_session = model.start_chat(history=[])
+
+
     try:
         driver.get(product_url)
         links = driver.find_elements(By.TAG_NAME, 'a')
@@ -104,9 +109,46 @@ def fetch_questions_url(product_url):
     except NoSuchElementException as e:
         return jsonify({"error": f"Error finding questions URL: {str(e)}"}), 404
     except Exception as e:
+        print(e)
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
     finally:
         driver.quit()
+
+@app.route('/chat', methods=['POST'])
+def chatbot():
+    # genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+    genai.configure(api_key='AIzaSyCbChvAokE6SJ-sJX6LFgRFiPYGia-0kZw')
+    generation_config = {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 64,
+        "max_output_tokens": 8192,
+        "response_mime_type": "text/plain",
+    }
+
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        generation_config=generation_config,
+    )
+
+    chat_session = model.start_chat(history=[])
+
+    user_input = request.json['message']
+    with open('dataset.txt', 'r') as file:
+        dataset = file.read()
+    
+    prompt = f'''Act as an AI chatbot and respond to the user in a conversational manner using the provided data in the following format. Format your responses as follows:
+
+User: {user_input}
+AI: [Your response text should follow this format: 'AI: [answer]']
+Use the following data to guide your responses:
+Data: {dataset}
+Here is the question: {user_input}
+'''
+    
+    response = model.generate_content(prompt)
+    
+    return jsonify({'response': response.text})
 
 @app.route('/analyze', methods=['GET'])
 def analyze_product():
