@@ -1,21 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "Link Dropper",
+  "name": "Senior Select",
   "content_scripts": [{
      "js": ["sidepanel.js"],
      "matches": ["http://*/*", "https://*/*"]
    }],
   "version": "1.0",
-  "description": "Drag and drop links to fetch and display content",
+  "description": "Drag and drop links to fetch details of product and answer queries related to the product",
   "permissions": ["sidePanel", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "action": {
-    "default_title": "Link Dropper"
+    "default_title": "Senior Select",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
   },
   "background": {
     "service_worker": "background.js"
   },
   "side_panel": {
     "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
 }

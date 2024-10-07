@@ -2,7 +2,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropZone = document.getElementById('drop-zone');
     const loadingElement = document.getElementById('loading');
     const contentArea = document.getElementById('content-area');
+    const chatMessages = document.getElementById("chat-messages");
+    
+    const summary = document.getElementById("summary");
+    const chat = document.getElementById("chat");
+    const summaryLink = document.getElementById("summary-link");
+    const chatLink = document.getElementById("chat-link");
 
+    summaryLink.addEventListener('click', (e)=>{
+        e.preventDefault();
+        chatLink.classList.remove('active');
+        summaryLink.classList.add('active');
+        summary.style.display = 'block';
+        chat.style.display='none';
+    })
+
+    chatLink.addEventListener('click', (e)=>{
+        e.preventDefault();
+        chatLink.classList.add('active');
+        summaryLink.classList.remove('active');
+        summary.style.display = 'none';
+        chat.style.display = 'block';
+    })
+    
     dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
         dropZone.classList.add('drag-over');
